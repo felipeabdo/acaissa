@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: "Panton";
+    src: url(../2/font/panton/Panton-BlackCaps.otf);
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+:root {
+    --fonte: 'Quicksand', sans-serif;    
+    --menu-fonte: 'Panton', sans-serif;
+}
+
+body {
+
+background-color: blueviolet;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+header {
+    background-color: aliceblue;
+    height: 120px;
+    width: 90vw;
+    border-radius: 0.75em;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.718);
+    font-size:20px;
+    font-weight: 700;
+    margin: 0 15px;
+    text-align: center;
+    font-family: var(--menu-fonte);
+}
+
+header img {
+    margin: 0 15px;
+    width: 200px;
+}
+
+header p {
+    color: rgb(138, 43, 226);
+    font-size:20px;
+    font-weight: 700;
+}
+
+
+main {
+    background-color: aliceblue;    
+    width: 100vw;    
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section#acai {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+div {
+    margin: 15px 0;
+    
+}
+
+div img {
+    width: 40vw;
+    margin: 0 30px;
+}
+
+img#um {
+    width: 30vw;
+    margin: 30px 0;
+}
+
+img#dois {
+    width: 100%;
+}
+
+#sobre {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    
+}
+
+#sobre p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    
+}
+
+#sobre img {
+    width: 15vw;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 5px solid  rgba(137, 43, 226, 0.6);;
+}
+
+@media (max-width: 830px) {
+
+    header a {
+        font-size:15px;
+    }
+    
+    header img {
+        width: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header a {
+        font-size:22px;
+    }
+
+    header p {
+        font-size:30px;
+    }
+
+    header img {
+        width: 250px;
+    }
+    
+}
